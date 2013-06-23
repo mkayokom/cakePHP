@@ -1,0 +1,118 @@
+2013-06-01 17:51:42 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts
+Stack Trace:
+#0 /www/casemondai.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-01 17:54:54 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts
+Stack Trace:
+#0 /www/casemondai.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-01 17:56:49 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts
+Stack Trace:
+#0 /www/casemondai.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-01 17:57:28 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /posts/view/1
+Stack Trace:
+#0 /www/casemondai.com/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /www/casemondai.com/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /www/casemondai.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-01 17:57:47 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /posts/view/1
+Stack Trace:
+#0 /www/casemondai.com/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /www/casemondai.com/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /www/casemondai.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-01 17:57:55 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /posts/view/2
+Stack Trace:
+#0 /www/casemondai.com/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /www/casemondai.com/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /www/casemondai.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-06-23 15:37:09 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /view/index
+Stack Trace:
+#0 /www/cakephp/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-23 15:41:11 Error: Fatal Error (64): Cannot redeclare class PostsController in [/www/cakephp/app/Controller/PostsController.php, line 22]
+2013-06-23 15:41:11 Error: [FatalErrorException] Cannot redeclare class PostsController
+Request URL: /posts/view/1
+Stack Trace:
+#0 /www/cakephp/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/www/cakephp/ap...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/www/cakephp/ap...', 22, Array)
+#2 /www/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/www/cakephp/ap...', 22, Array)
+#3 /www/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-23 15:42:13 Error: [MissingViewException] View file "/www/cakephp/app/View/Posts/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/www/cakephp/app/View/Posts/add.ctp',
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /www/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /www/cakephp/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /www/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /www/cakephp/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-23 16:23:08 Error: [NotFoundException] Invalid post
+Request URL: /posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /www/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /www/cakephp/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-23 16:34:31 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /www/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /www/cakephp/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-23 16:36:51 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /www/cakephp/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /www/cakephp/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
